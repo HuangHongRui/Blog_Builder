@@ -65,20 +65,22 @@ link_title: 友情链接
 links:
   CSDN_Blog: http://blog.csdn.net/leonishuang
   简书_Blog: http://www.jianshu.com/u/4fe15f8f16d3
-
+  Albert: http://blog.liyu0906.cn/
+  SpontaLeo: https://spontaleo.github.io/
+  Frankie Tang: https://frankietang.github.io/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 # 头像
-avatar: css/images/lufei.jpg
+avatar: https://huanghongrui.github.io/css/images/lufei.jpg
 
 
 # 网站统计
 # 站长统计 填写id
 # eg:　
 # CNZZ: 123456789
-CNZZ: 
+CNZZ: 269
 
 # 评论
 # 友言uid
