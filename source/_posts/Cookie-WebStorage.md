@@ -11,12 +11,17 @@ categories: HTTP
 ### Cookie:
 出生：1993年3月
 主要用途：保存登录信息（如你登录某个网站市场可以看到“记住密码”，这通常就是通过在 Cookie 中存入一段辨别用户身份的数据来实现的。)
-
+一般两个作用： 识别用户身份 & 记录历史
+1. Cookie 是浏览器访问服务器后，服务器传给浏览器的一段数据。
+2. 浏览器需要保存这段数据，不得轻易删除。
+3. 此后每次浏览器访问该服务器，都必须带上这段数据。
 
 ### ocalStorage:
 HTML5 标准中新加入的技术.
 IE 6 时代，有一个叫 userData 的东西用于本地存储，而当时考虑到浏览器兼容性，更通用的方案是使用 Flash。
 如今，localStorage 被大多数浏览器所支持，如果你的网站需要支持 IE6+，那以 userData 作为你的 polyfill 的方案是种不错的选择。
+不参与网络传输。
+一般用于性能优化，可以保存图片、js、css、html 模板、大量数据。
 
 ### sessionStorage:
 
@@ -54,3 +59,17 @@ sessionStorage 是一个前端的概念，它只可以将一部分数据在当�
 [HTMl5的sessionStorage和localStorage](http://www.cnblogs.com/yuzhongwusan/archive/2011/12/19/2293347.html)
 [HTML5 LocalStorage 本地存储](http://www.cnblogs.com/xiaowei0705/archive/2011/04/19/2021372.html)
 转自：[详说 Cookie, LocalStorage 与 SessionStorage](http://jerryzou.com/posts/cookie-and-web-storage/)
+
+---
+
+
+- session
+
+当一个用户打开淘宝登录后，刷新浏览器仍然展示登录状态。服务器如何分辨这次发起请求的用户是刚才登录过的用户呢？
+
+这里就使用了session保存状态。用户在输入用户名密码提交给服务端，服务端验证通过后会创建一个session用于记录用户的相关信息，这个 session 可保存在服务器内存中，也可保存在数据库中
+
+创建session后，会把关联的session_id 通过setCookie 添加到http响应头部中。
+浏览器在加载页面时发现响应头部有 set-cookie字段，就把这个cookie 种到浏览器指定域名下。
+当下次刷新页面时，发送的请求会带上这条cookie， 服务端在接收到后根据这个session_id来识别用户。
+cookie 是存储在浏览器里的一小段「数据」，而session是一种让服务器能识别某个用户的「机制」，session 在实现的过程中需要使用cookie。 二者不是同一维度的东西。
