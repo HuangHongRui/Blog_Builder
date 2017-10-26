@@ -1,5 +1,5 @@
 ---
-title: TypeScript-入门
+title: 初识TypeScript_1
 date: 2017-8-17 13:56:31
 tags: ScriptType
 categories: [新手殿堂]
