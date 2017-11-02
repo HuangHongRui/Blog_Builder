@@ -1,11 +1,10 @@
 ---
-title: DailyQuestion-2
+title: Judge Route Circle
 date: 2017-10-27 00:30:22
 tags: [LeetCode,算法题]
 categories: 每日一题
 description:
 ---
-### Judge Route Circle
 
 Initially, there is a Robot at position (0, 0). Given a sequence of its moves, judge if this robot makes a circle, which means it moves back to the original place.
 

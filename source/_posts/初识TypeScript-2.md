@@ -2,7 +2,7 @@
 title: 初识TypeScript_2
 date: 2017-8-19 16:48:44
 tags: ScriptType
-categories: [新手殿堂]
+categories: [新知识]
 description:
 ---
 
