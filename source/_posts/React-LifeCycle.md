@@ -119,16 +119,19 @@ void componentWillUpdate(
 ```
 void componentDidUpdate(
   object prevProps, object prevState, object prevContext
-)
-``` 
+)```
+
 组件更新后立即执行，初始渲染不执行。可用作操作发生变化 DOM 的时机。
+
 
 ## 卸载
 ![](./box/Pic/unmount.svg)
+
 ## componentWillUnmount
 ```
 void componentWillUnmount()
 ```
+
 组件即将从 DOM 中卸载之前执行，可在此进行定时器清除、事件解绑等清理工作。
 
 参考链接:
