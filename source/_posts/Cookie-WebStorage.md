@@ -16,7 +16,7 @@ categories: HTTP
 2. 浏览器需要保存这段数据，不得轻易删除。
 3. 此后每次浏览器访问该服务器，都必须带上这段数据。
 
-### ocalStorage:
+### localStorage:
 HTML5 标准中新加入的技术.
 IE 6 时代，有一个叫 userData 的东西用于本地存储，而当时考虑到浏览器兼容性，更通用的方案是使用 Flash。
 如今，localStorage 被大多数浏览器所支持，如果你的网站需要支持 IE6+，那以 userData 作为你的 polyfill 的方案是种不错的选择。

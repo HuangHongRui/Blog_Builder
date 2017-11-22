@@ -18,7 +18,7 @@ React 组件的生命周期有三个主要场景：
 不同的场景会调用不同的生命周期方法，包含 `will` 的方法在某个时间节点**之前**执行，包含 `did` 方法在某个时间节点**之后**执行。
 
 ## 初始渲染（装载）
-![](./box/Pic/initialMount.svg)
+![](http://blog.luckyman.xyz/box/Pic/initialMount.svg)
 ## getDefaultProps
 ```
 object getDefaultProps()
@@ -60,9 +60,9 @@ void componentDidMount()
 更新会在 React 组件初始渲染之后、卸载之前多次发生，属性、状态改变都会触发更新。
 
 属性改变触发的更新流程：
-![](./box/Pic/propsChange.svg)
+![](http://blog.luckyman.xyz/box/Pic/propsChange.svg)
 状态改变触发的更新流程：
-![](./box/Pic/stateChange.svg)
+![](http://blog.luckyman.xyz/box/Pic/stateChange.svg)
 
 componentWillReceiveProps
 ```
@@ -125,7 +125,7 @@ void componentDidUpdate(
 
 
 ## 卸载
-![](./box/Pic/unmount.svg)
+![](http://blog.luckyman.xyz/box/Pic/unmount.svg)
 
 ## componentWillUnmount
 ```

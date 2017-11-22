@@ -28,7 +28,8 @@ HTTP1.1增加了Cache-Control: max-age=,值为以秒为单位的最大有效期�
 - 路由器缓存
 - ISP DNS缓存
 - DNS递归查询 
-![](./box/Pic/ServerIP.svg)
+
+![](http://blog.luckyman.xyz/box/Pic/ServerIP.svg)
 
 ### 6_ 打开一个(套接字)socket与目标IP地址，端口建立TCP链接，三次握手如下：[详细文章](http://blog.luckyman.xyz/2017/08/14/TCP%E4%BC%A0%E8%BE%93%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E7%AD%96%E7%95%A5/)
 >客户端发送一个TCP的SYN=1，Seq=X的报文段到Server
