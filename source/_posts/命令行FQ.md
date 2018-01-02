@@ -49,5 +49,13 @@ $ git config --global https.proxy https://proxyuser:proxypwd@proxy.server.com:80
 `pc brew install` 安装...
 前面带自己设置的快捷命令即可～
 
+### 预防：
+有的大佬可能会遇到一种情况，
+就是每次打开一个终端（Mac:Terminal）.
+都需要 source ~/.bashrc.. 很是麻烦.
+所以让为了让其自动执行该命令..把命令放到 .bash_profile 里去..如下～
+`touch ~/.bash_profile; echo 'source ~/.bashrc'>> ~/.bash_profile`
+
+
 Done..
 
